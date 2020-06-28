@@ -21,7 +21,7 @@ public class IceCreamAppV1 {
         /** Create a new Arraylist of Edibles */
         ArrayList<Edibles> order1 = new ArrayList<>();
 
-        /** order custom ice creams */
+        /** Order custom ice creams */
         order1.add(iceCreamSalon.orderIceRocket());
         order1.add(iceCreamSalon.orderMagnum(MagnumType.ROMANTIC_STRAWBERRIES));
         order1.add(iceCreamSalon.orderCone(new Flavor[]{Flavor.BANANA}));
@@ -30,6 +30,6 @@ public class IceCreamAppV1 {
         iceCreamSalon.eat();
 
         /** Get profit and print to terminal */
-        System.out.println("The total profit of the simulated order: " +iceCreamSalon.getProfit());
+        System.out.println("The total profit of the simulated order: " + iceCreamSalon.getProfit()+ " EUR");
     }
 }

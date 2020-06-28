@@ -21,7 +21,7 @@ public class Cone implements Edibles {
         return balls;
     }
 
-    /** Overrides used in TestAPP */
+    /** Overrides used in Testing */
     @Override
     public String toString() {
 
@@ -30,7 +30,9 @@ public class Cone implements Edibles {
                 '}';
     }
 
-    @Override
+    /** Prints out what has been eaten, not sure why it needs to be in sellers package to not break */
     public void eat() {
+
+        System.out.println("I'm eating an ice cone with flavor: " + this.balls);
     }
 }

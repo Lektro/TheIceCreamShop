@@ -52,6 +52,7 @@ public class IceCreamCar implements IceCreamSeller {
 
     @Override
     public Magnum orderMagnum(MagnumType type) throws NoMoreIceCreamException {
+
         /** check stock and make a new magnum when still available */
         if (stock.getMagnums() > 0) {
             Magnum newMagnum = new Magnum(type);
@@ -70,10 +71,11 @@ public class IceCreamCar implements IceCreamSeller {
         return profit;
     }
 
-    /** not sure if necessary to scared to delete ^^ */
+    /** I kinda need it otherwise it doesn't work, not sure what's going on. */
     @Override
     public void eat() {
 
+        System.out.println("We are currently eating ice cream in The Ice Cream Car TM.");
     }
 }
 

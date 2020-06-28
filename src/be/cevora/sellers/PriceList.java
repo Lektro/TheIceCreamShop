@@ -57,14 +57,17 @@ public class PriceList implements Edibles {
     /** set a new price for magnum deviated price with case switch */
     public void setMagnumStandardPrice(double magnumDeviatedPrice) {
         switch (type){
+
+            /** add price variety here */
             case ALPINE_NUTS: magnumStandardPrice *= 1.5;
         }
-
+        /** sets the magnumStandardPrice to the deviated price */
         this.magnumStandardPrice = magnumDeviatedPrice;
         }
 
-    @Override
-    public void eat() {
+        /** really not sure what's happening anymore lol */
+        @Override
+        public void eat() {
     }
 }
 

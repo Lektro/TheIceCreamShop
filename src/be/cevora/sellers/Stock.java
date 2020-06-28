@@ -2,11 +2,13 @@ package be.cevora.sellers;
 
 public class Stock {
 
+    /** Class Variables */
     private int iceRocket;
     private int cones;
     private int balls;
     private int magnums;
 
+    /** Constructor */
     public Stock (int iceRocket, int cones, int balls, int magnums) {
         this.iceRocket = iceRocket;
         this.cones = cones;

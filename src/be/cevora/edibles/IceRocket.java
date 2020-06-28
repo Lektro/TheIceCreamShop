@@ -8,10 +8,14 @@ public class IceRocket implements Edibles {
     /** Override for TestAPP */
     @Override
     public String toString() {
+
         return "IceRocket Consumed";
     }
 
+    /** Override default eat method */
     @Override
     public void eat() {
+
+        System.out.println("I'm eating an ice rocket");
     }
 }

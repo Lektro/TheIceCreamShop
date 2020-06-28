@@ -20,20 +20,10 @@ public class Magnum implements Edibles {
         return type;
     }
 
-    /** Overrides for testing with TestAPP */
-    @Override
-    public String toString() {
-
-        return "Magnum{" +
-                "type=" + type +
-                '}';
-    }
-
-    /** Overrides for testing with TestAPP */
-    @Override
+    /** Prints out what has been eaten, not sure why it needs to be in sellers package to not break */
     public void eat() {
 
-        System.out.println("I'm eating an ice cream with flavor: " + this.type);
+        System.out.println("I'm eating a Magnum with flavor: " + this.type);
     }
 }
 

@@ -3,7 +3,8 @@ package be.cevora.sellers;
 import be.cevora.application.NoMoreIceCreamException;
 import be.cevora.edibles.*;
 
-public interface IceCreamSeller extends Profitable {
+public interface IceCreamSeller extends Profitable, Edibles {
+
     /** Class variable */
     double getProfit();
 
@@ -11,4 +12,6 @@ public interface IceCreamSeller extends Profitable {
     Cone orderCone(Flavor[] flavor) throws NoMoreIceCreamException;
     IceRocket orderIceRocket() throws NoMoreIceCreamException;
     Magnum orderMagnum(MagnumType type) throws NoMoreIceCreamException;
+
 }
+

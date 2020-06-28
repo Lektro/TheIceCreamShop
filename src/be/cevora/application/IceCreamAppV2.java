@@ -17,32 +17,32 @@ public class IceCreamAppV2 {
         Stock stockIceCreamCar = new Stock(5, 10, 25, 7);
 
         /** Create a new instance of the ice cream seller */
-        IceCreamSeller iceCreamCar = new IceCreamCar(priceList, stockIceCreamCar);
+        IceCreamSeller edibles = new IceCreamCar(priceList, stockIceCreamCar);
 
         /** Create a new Arraylist of Edibles */
         ArrayList<Edibles> order2 = new ArrayList<>();
 
-        /** order custom ice creams */
-        order2.add(iceCreamCar.orderIceRocket());
-        order2.add(iceCreamCar.orderMagnum(MagnumType.ROMANTIC_STRAWBERRIES));
-        order2.add(iceCreamCar.orderCone(new Flavor[]{Flavor.BANANA}));
-        order2.add(iceCreamCar.orderIceRocket());
-        order2.add(iceCreamCar.orderMagnum(MagnumType.ALPINE_NUTS));
-        order2.add(iceCreamCar.orderCone(new Flavor[]{Flavor.MOKKA}));
-        order2.add(iceCreamCar.orderIceRocket());
+        /** Order custom ice creams */
+        order2.add(edibles.orderIceRocket());
+        order2.add(edibles.orderMagnum(MagnumType.ROMANTIC_STRAWBERRIES));
+        order2.add(edibles.orderCone(new Flavor[]{Flavor.BANANA}));
+        order2.add(edibles.orderIceRocket());
+        order2.add(edibles.orderMagnum(MagnumType.ALPINE_NUTS));
+        order2.add(edibles.orderCone(new Flavor[]{Flavor.MOKKA}));
+        order2.add(edibles.orderIceRocket());
 
-        /** uncomment the next block comment and order more ice rockets to see the exception handling */
+        /** Uncomment the next block comment and order more ice rockets to see the exception handling */
 
         /*
-        order2.add(iceCreamCar.orderIceRocket());
-        order2.add(iceCreamCar.orderIceRocket());
-        order2.add(iceCreamCar.orderIceRocket());
+        order2.add(edibles.orderIceRocket());
+        order2.add(edibles.orderIceRocket());
+        order2.add(edibles.orderIceRocket());
         */
 
-        /** Invoke eat method on Array List of current Ice Cream Order */
-        iceCreamCar.eat();
+        /** Invoke eat method on Array List of current Ice Cream Order with overloaded methods from Edibles */
+        edibles.eat();
 
         /** Get profit and print to terminal */
-        System.out.println("The total profit of the simulated order: " + iceCreamCar.getProfit() + " EUR");
+        System.out.println("The total profit of this simulated order: " + edibles.getProfit() + " EUR");
     }
 }
