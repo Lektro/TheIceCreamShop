@@ -51,6 +51,9 @@ public class IceCreamSalon implements IceCreamSeller {
     }
 
     /** I kinda need it otherwise it breaks, not sure why, should only be called on ice creams, which they do */
+    
+    // De bron van dit probleem ligt bij je IceCreamSeller klasse die foutief Edibles implementeert.
+    
     @Override
     public void eat() {
 
