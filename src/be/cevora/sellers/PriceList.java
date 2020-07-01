@@ -66,6 +66,9 @@ public class PriceList implements Edibles {
         }
 
         /** really not sure what's happening anymore lol */
+    
+        // Pricelist extend niet van Edibles. Een prijslijst kan niet eat'en, deze methode hoort hier dus niet te staan.
+    
         @Override
         public void eat() {
     }
