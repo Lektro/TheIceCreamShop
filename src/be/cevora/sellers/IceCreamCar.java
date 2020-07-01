@@ -72,6 +72,10 @@ public class IceCreamCar implements IceCreamSeller {
     }
 
     /** I kinda need it otherwise it doesn't work, not sure what's going on. */
+    
+    // Je IceCreamCar implements op dit moment IceCreamSeller, en die implementeert foutief Edibles. 
+    // Hij eist dus dat je eat() een implementatie geeft in deze concrete klasse.
+    
     @Override
     public void eat() {
 
